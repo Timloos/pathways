@@ -1,0 +1,258 @@
+body,
+html {
+    height: 100%;
+    width: 100%;
+    margin: 0px;
+    ;
+}
+
+* {
+    color: white;
+
+}
+
+.achtergrond1,
+.achtergrond2 {
+    position: relative;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.achtergrond1 {
+    background-image: url(theezakje.jpeg);
+    min-height: 100%;
+
+}
+
+.achtergrond2 {
+    background-image: url(theepot.jpeg);
+    min-height: 100%;
+
+}
+
+.navigatiebalk {
+    background-color: black;
+    position: fixed;
+    top: 0px;
+    width: 100%;
+    justify-content: space-between;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    align-content: center;
+    border-bottom-color: white;
+    border-bottom-width: small;
+    border-bottom-style: solid;
+    z-index: 1;
+}
+
+.navigatie {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
+    align-items: center;
+    align-content: space-evenly;
+    font-size: 1.5em;
+    width: 25%;
+
+}
+
+.Missie {
+    position: absolute;
+    top: 33%;
+    left: 25%;
+    align-items: center;
+    height: auto;
+    width: auto;
+    Border: 1px #0000009f;
+    border-style: solid;
+    margin: auto;
+    background-color: #0000009f;
+}
+
+.Onze {
+    align-items: center;
+    font-size: 3em;
+    text-align: center;
+}
+
+.Hand {
+    Text-align: center;
+    font-size: 1.5em;
+    padding-top: 10px;
+}
+
+.Maand {
+    position: sticky;
+    align-items: center;
+    Height: 100%;
+    width: 100%;
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    align-items: center;
+    align-content: stretch;
+}
+
+.plaatje {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    align-content: space-evenly;
+    width: 50%;
+    height: 50%;
+
+}
+
+
+.glas {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
+    align-items: center;
+    align-content: space-evenly;
+    width: 33%;
+    height: 33%;
+    Text-align: center;
+    font-size: 1.5em;
+    padding-top: 10px;
+}
+
+.Locaties {
+    position: absolute;
+    top: 5%;
+    left: 40%;
+    height: 10%;
+    width: 20%;
+    background-color: #0000009f;
+    align-items: center;
+    font-size: 2em;
+    text-align: center;
+}
+
+.Locatie {
+    position: static;
+    align-items: center;
+    height: 25%;
+    width: 70%;
+    padding: 15%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    align-items: center;
+    align-content: space-around;
+
+}
+
+.lijstje {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    align-items: space-evenly;
+    align-content: space-evenly;
+    height: 100%;
+    Text-align: center;
+    font-size: 1.5em;
+    padding: 5%;
+    background-color: #0000009f;
+
+}
+
+
+
+.bottom {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
+    align-items: flex-end;
+    align-content: flex-end;
+    width: 100%;
+    height: 5%;
+    position: absolute;
+    bottom: 0px;
+    padding-bottom: 1%;
+    background-color: black;
+    font-size: 1.5em;
+    border-top-color: white;
+    border-top-width: small;
+    border-top-style: solid;
+}
+
+@media screen and (max-width: 785px) {
+    .navigatiebalk {
+        flex-direction: column;
+        flex-wrap: wrap;
+        
+    }
+    .navigatie{
+        flex-direction: column;
+        flex-wrap: wrap;
+        width: 100%;
+    }
+    .Missie {
+        left: 0%;
+        top: 50%;
+    }
+    .Maand{
+        Height: 280%;
+        width: 100%;
+        flex-wrap: wrap;
+
+    }
+    .plaatje {
+        flex-direction: column;
+        flex-wrap: nowrap;
+        justify-content: space-evenly;
+        width: 33%;
+        height: 50%;
+    }
+    .Locaties {
+        position: absolute;
+        width: 50%;
+        height: 15%;
+        left: 30%;
+          
+    }
+    .Locatie {
+              
+        position: relative;
+        top: 30%;
+        left: 15%;
+        height: 50%;
+        width: 70%;
+        padding: 0%;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        justify-content: flex-start;
+        align-content: flex-end;
+    }
+    .lijstje {
+        flex-wrap: wrap;
+        height: 10%;
+        Text-align: center;
+        font-size: 1em;
+        padding: 0%;
+        
+    }
+    .bottom {
+        flex-direction: column;
+        flex-wrap: wrap;   
+        justify-content: flex-start;
+        align-items: space-evenly;
+        align-content: space-evenly;
+        width: 100%;
+        height: 20%;
+        }
+    }
